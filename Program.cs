@@ -49,8 +49,7 @@
 
                 int xp = new Func<int>(() =>
                 {
-                    string xp = table.Get("new_xp").String;
-                    xp = xp.Replace("~", "");
+                    string xp = table.Get("xp").String;
                     return int.Parse(xp);
                 })();
 
